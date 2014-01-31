@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/villadelfia/Unief/2ba/HSAI/project/03 gui-proto-1'
+let g:netrw_dirhist_2='/Users/villadelfia/Unief/2ba/CGR/Les2'
+let g:netrw_dirhist_3='/Users/villadelfia/.zsh'
