@@ -120,38 +120,6 @@ au BufNewFile,BufRead REPL AutoCloseOff
 au FileType xml,html AutoCloseOff
 au FileType xml,html let b:AutoCloseNoCrRemap = 1
 
-" Re-enable autoclose when switching windows
-fun! s:TurnOffAutoComplete()
-  if &buftype != "nofile"
-    if expand('%')=='REPL' || expand('%') == 'SLDB'
-      execute ":NeoComplCacheDisable"
-    else
-      execute ":NeoComplCacheEnable"
-    endif
-  endif
-endfun
-
-au WinEnter * :call s:TurnOffAutoComplete()
-au BufNewFile,BufRead * :call s:TurnOffAutoComplete()
-
-" neocomplcache
-let g:neocomplcache_enable_at_startup = 1
-let g:neocomplcache_force_overwrite_completefunc = 1
-let g:neocomplcache_enable_smart_case = 1 
-let g:neocomplcache_enable_camel_case_completion = 1 
-let g:neocomplcache_enable_underbar_completion = 1 
-let g:neocomplcache_min_syntax_length = 3 
-let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*' 
-inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>" 
-inoremap <expr><C-y> neocomplcache#close_popup() 
-inoremap <expr><C-e> neocomplcache#cancel_popup() 
-inoremap <expr><Tab> pumvisible() ? "\<C-n>" : "\<TAB>" 
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS 
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags 
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS 
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete 
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags 
-
 " powerline options.
 let g:Powerline_symbols = 'fancy'
 
@@ -309,3 +277,12 @@ let vimrplugin_routmorecolors = 1
 let vimrplugin_restart = 1
 au FileType r call StartR('R')
 au VimLeave * call system("tmux kill-pane -a")
+
+" YouCompleteMe stuff
+let g:ycm_global_ycm_extra_conf = $HOME . '/.vim/bundle/_mine/ycm_global.py'
+let g:ycm_extra_conf_vim_data = ['g:ycm_global_ycm_extra_conf']
+let g:ycm_key_list_select_completion = ['<Down>']
+let g:ycm_autoclose_preview_window_after_insertion=1
+let g:ycm_autoclose_preview_window_after_completion=1
+let g:ycm_confirm_extra_conf = 0
+let g:ycm_open_loclist_on_ycm_diags = 1
