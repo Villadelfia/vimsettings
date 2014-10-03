@@ -123,12 +123,6 @@ au FileType xml,html let b:AutoCloseNoCrRemap = 1
 " powerline options.
 let g:Powerline_symbols = 'fancy'
 
-" snippet settings.
-"let g:snips_trigger_key = '<M-Tab>'
-
-" conque
-command! Shell ConqueTermSplit zsh
-
 " set leader
 let mapleader="\\"
 
