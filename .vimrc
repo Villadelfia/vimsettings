@@ -133,8 +133,8 @@ command! Shell ConqueTermSplit zsh
 let mapleader="\\"
 
 " delimitMate options.
-"au BufNewFile,BufRead *.md,*.lisp,*.scm,*.txt,REPL let b:loaded_delimitMate = 1
-"let g:delimitMate_expand_cr=1
+let g:delimitMate_expand_cr=1
+au FileType vim let b:delimitMate_quotes="'"
 
 " Updatetime
 set ut=1000
