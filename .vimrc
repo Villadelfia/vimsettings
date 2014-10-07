@@ -77,9 +77,14 @@ set backspace=indent,eol,start whichwrap+=<,>,[,]
 set shellslash 
 
 " Set <D-i> to autoindent (c-like)
-nnoremap <D-i> gg=G
-inoremap <D-i> <Esc>gg=Gi
-vnoremap <D-i> =
+if &ft == 'c' || &ft == 'cpp' || &ft == 'objc' || &ft == 'objcpp'
+    nnoremap <D-i> :pyf ~/.vim/bundle/_mine/clang-format.py<CR>
+    inoremap <D-i> <ESC>:pyf ~/.vim/bundle/_mine/clang-format.py<CR>i
+else
+    nnoremap <D-i> gg=G
+    inoremap <D-i> <Esc>gg=Gi
+    vnoremap <D-i> =
+endif
 
 " Clear search highlighting when you press space
 nnoremap <silent> <C-l> :nohl<Bar>:echo<CR>
