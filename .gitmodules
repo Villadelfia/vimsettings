@@ -1,60 +1,80 @@
 [submodule ".vim/bundle/YouCompleteMe"]
 	path = .vim/bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+	branch = master
 [submodule ".vim/bundle/ListToggle"]
 	path = .vim/bundle/ListToggle
 	url = https://github.com/Valloric/ListToggle.git
+	branch = master
 [submodule ".vim/bundle/delimitMate"]
 	path = .vim/bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
+	branch = master
 [submodule ".vim/bundle/LaTeX-Box"]
 	path = .vim/bundle/LaTeX-Box
 	url = https://github.com/LaTeX-Box-Team/LaTeX-Box.git
+	branch = master
 [submodule ".vim/bundle/bufexplorer"]
 	path = .vim/bundle/bufexplorer
 	url = https://github.com/jlanzarotta/bufexplorer.git
+	branch = master
 [submodule ".vim/bundle/nerdtree"]
 	path = .vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+	branch = master
 [submodule ".vim/bundle/dash.vim"]
 	path = .vim/bundle/dash.vim
 	url = https://github.com/rizzatti/dash.vim.git
+	branch = master
 [submodule ".vim/bundle/funcoo.vim"]
 	path = .vim/bundle/funcoo.vim
 	url = https://github.com/rizzatti/funcoo.vim.git
+	branch = master
 [submodule ".vim/bundle/nerdcommenter"]
 	path = .vim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+	branch = master
 [submodule ".vim/bundle/tcomment_vim"]
 	path = .vim/bundle/tcomment_vim
 	url = https://github.com/tomtom/tcomment_vim.git
+	branch = master
 [submodule ".vim/bundle/tlib_vim"]
 	path = .vim/bundle/tlib_vim
 	url = https://github.com/tomtom/tlib_vim.git
+	branch = master
 [submodule ".vim/bundle/Vim-R-plugin"]
 	path = .vim/bundle/Vim-R-plugin
 	url = https://github.com/jcfaria/Vim-R-plugin.git
+	branch = master
 [submodule ".vim/bundle/vim-addon-mw-utils"]
 	path = .vim/bundle/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+	branch = master
 [submodule ".vim/bundle/vim-bundler"]
 	path = .vim/bundle/vim-bundler
 	url = https://github.com/tpope/vim-bundler.git
+	branch = master
 [submodule ".vim/bundle/vim-pastie"]
 	path = .vim/bundle/vim-pastie
 	url = https://github.com/tpope/vim-pastie.git
+	branch = master
 [submodule ".vim/bundle/vim-perl"]
 	path = .vim/bundle/vim-perl
 	url = https://github.com/vim-perl/vim-perl.git
+	branch = master
 [submodule ".vim/bundle/vim-rails"]
 	path = .vim/bundle/vim-rails
 	url = https://github.com/tpope/vim-rails.git
+	branch = master
 [submodule ".vim/bundle/vim-rake"]
 	path = .vim/bundle/vim-rake
 	url = https://github.com/tpope/vim-rake.git
+	branch = master
 [submodule ".vim/bundle/vim-snipmate"]
 	path = .vim/bundle/vim-snipmate
 	url = https://github.com/garbas/vim-snipmate.git
+	branch = master
 [submodule ".vim/bundle/vimux"]
 	path = .vim/bundle/vimux
 	url = https://github.com/benmills/vimux.git
+	branch = master
