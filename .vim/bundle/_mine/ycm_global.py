@@ -28,12 +28,19 @@ flags_cpp = [
     '-isystem',
     '/Applications/Xcode.app/Contents/Developer/Toolchains/'
             'XcodeDefault.xctoolchain/usr/lib/clang/6.0/include',
+    '-isystem',
+    os.environ['HOME'] + 'Developer/fakeinclude'
 ]
 
 flags_qt = [
     '-isystem',
-    os.environ['QT5'] + '/include'
+    os.environ['QT5'] + '/include',
 ]
+
+for files in os.listdir(os.environ['QT5'] + '/include'):
+        flags_qt.append('-isystem')
+        flags_qt.append(os.environ['QT5'] + '/include/' + files)
+
 
 def IsCFile(filename):
     return filename.endswith("c") or filename.endswith("h")
@@ -78,7 +85,7 @@ def BaseFlagsForFile(filename):
     final_flags = []
 
     if IsCppFile(filename):
-        final_flags = flags + flags_cpp
+        final_flags = flags + flags_cpp + flags_qt
     elif IsCFile(filename):
         final_flags = flags + flags_c
 
